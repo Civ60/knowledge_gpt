@@ -33,7 +33,7 @@ st.header("📖KnowledgeGPT")
 bootstrap_caching()
 
 sidebar()
-openai_api_key="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"
+openai_api_key="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"
 #openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 
