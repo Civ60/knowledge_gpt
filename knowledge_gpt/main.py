@@ -33,8 +33,8 @@ st.header("📖KnowledgeGPT")
 bootstrap_caching()
 
 sidebar()
-
-openai_api_key = st.session_state.get("OPENAI_API_KEY")
+openai_api_key="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"
+#openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 
 if not openai_api_key:
@@ -85,6 +85,8 @@ with st.spinner("Indexing document... This may take a while⏳"):
 
 with st.form(key="qa_form"):
     query = st.text_area("Ask a question about the document")
+    c="parle en français."
+    query=query+c
     submit = st.form_submit_button("Submit")
 
 
